@@ -1,0 +1,16 @@
+@import "./variables";
+
+@mixin mobile {
+    @media (max-width: #{$small-devices}){
+        @content;
+    }
+}
+
+@mixin btn-theme($bg-color, $color) {
+    padding: 7px 23px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: $bg-color;
+    color: $color;
+}
